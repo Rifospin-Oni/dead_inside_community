@@ -1,0 +1,59 @@
+.navigation
+{
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    backdrop-filter: blur(12px);
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 1;
+     margin-left: -20%; 
+    border-right:  20px solid rgba(229, 180, 255, 0.8);
+    transition: 0.8s ease;
+}
+.navigation_title h1{
+  margin-top: 20%;
+  color: rgb(0, 0, 97);
+}
+.navigation_button::before
+{
+   content: "|  ";
+   color: rgb(254, 255, 241);
+}
+.navigation_title h1::first-letter
+{
+    color: rgb(53, 0, 102);
+}
+.navigation_button
+{
+    font-size: 50px;
+    margin-bottom: 5px;
+    transition: ease 0.3s;
+}
+.navigation_button:hover
+{
+    font-size: 55px;
+    color: rgb(84, 0, 163);
+    margin-bottom: 10px;
+}
+
+.navigation:hover
+{
+    margin-left: 0px
+    
+}
+.blur
+{
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    
+}
+.navigation_list
+{
+    height: 240px;
+}
