@@ -32,18 +32,32 @@ body{
     border-left:  5px solid rgba(101, 0, 155, 0.3);
     border-right:  5px solid rgba(101, 0, 155, 0.3);
 }
-.main h1
-{
-    margin-top: 5%;
-    font-family: 'Bricolage Grotesque', sans-serif;
-    font-weight: 800;
-    font-size: 120px;
-    color: black;
-    width: 540px;
-    height: 120px;
-}
 .blurred
 {
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(6px);
+}
+.About_Us
+{
+    width: 100%;
+    height: 30%;
+    background-color: rgba(145, 114, 248, 0.1);
+    border-right: solid rgba(27, 8, 58, 0.35) 2px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.About_Us h2
+{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: #100826;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+.About_Us span
+{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: #0e0533;
+    font-size: 25px;
+    text-align: center
 }
 
