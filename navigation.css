@@ -4,17 +4,18 @@
     width: 20%;
     height: 100%;
     backdrop-filter: blur(12px);
+    background-color: rgba(26, 0, 89, 0.1);
     font-family: 'Bricolage Grotesque', sans-serif;
     font-size: 40px;
     font-weight: 300;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    z-index: 1;
+    z-index: 2;
      margin-left: -20%;
     border-right-width: 15px;
     border-right-style: solid;
-    border-right-color: rgba(188, 47, 255, 0.8);
+    border-right-color: rgba(120, 0, 255, 0.8);
     transition: 0.8s ease;
     overflow-y: scroll;
 }
@@ -52,8 +53,8 @@
 
 .navigation:hover
 {
-    margin-left: 0px
-    
+    margin-left: 0px;
+
 }
 .blur
 {
@@ -74,6 +75,11 @@
 .navigation_list
 {
     height: 240px;
+    margin-top: -15%;
+}
+.navigation_button:nth-child(4)
+{
+    margin-bottom: 15%;
 }
 .blur:hover
 {
@@ -85,4 +91,32 @@
 .button_blurred
 {
     filter: blur(2px);
+}
+.night_navigation
+{
+    background-color: rgba(210, 184, 246, 0.25);
+    filter: brightness(140%);
+    transition: 1.5s;
+}
+.overlay_button
+{
+    width: 120px;
+    height: 50px;
+    background-color: rgba(123, 58, 231, 0.05);
+    backdrop-filter: blur(40px);
+    overflow: visible;
+    transition: 0.25s;
+    color: rgba(27, 9, 70, 0.7);
+    border-radius: 5px;
+}
+.overlay_button::before {
+    content: "|   ";
+    color: rgb(224, 197, 250);
+}
+.overlay_button:hover
+{
+    font-size: 55px;
+    color: rgb(84, 0, 163);
+    width: 150px;
+    height: 70px;
 }

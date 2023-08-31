@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400&family=DM+Sans:opsz@9..40&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&display=swap');
 *
 {
     margin: 0;
@@ -12,6 +13,18 @@
 {
     position: fixed;
     z-index: -1;
+}
+.overlay
+{
+    transition: 1.5s;
+}
+.overlayed
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 body{
     /* background-image: url(BG2.png); */
@@ -35,29 +48,42 @@ body{
 .blurred
 {
     backdrop-filter: blur(6px);
+    box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5)
 }
 .About_Us
 {
     width: 100%;
-    height: 30%;
+    height: 20%;
     background-color: rgba(145, 114, 248, 0.1);
     border-right: solid rgba(27, 8, 58, 0.35) 2px ;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 0.5s;
 }
 .About_Us h2
 {
-    font-family: 'Bricolage Grotesque', sans-serif;
-    color: #100826;
-    font-size: 50px;
-    margin-bottom: 25px;
+    font-family: 'Manrope', sans-serif;
+    color: #251352;
+    font-size: 80px;
+    margin-bottom: 30px;
+    margin-top: 50px;
 }
 .About_Us span
 {
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Pacifico', cursive;
     color: #0e0533;
-    font-size: 25px;
-    text-align: center
+    font-size: 45px;
+    text-align: center;
 }
+.About_Us:hover
+{
+    backdrop-filter: brightness(108%);
+}
+.About_Us h2:first-letter
+{
+    color: #633bb7;
+}
+
+
 

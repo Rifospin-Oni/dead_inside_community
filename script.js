@@ -1,7 +1,23 @@
+let w = window.screen.availWidth;
+if(w > 1000){
+    let bg = document.querySelector('.BG')
+    let FirstLayer = document.querySelector('.main')
+    window.addEventListener('mousemove', function(e) {
+        let x = e.clientX / window.innerWidth;
+        let y = e.clientY / window.innerHeight;
+        bg.style.transform = 'translate(-' + x * 15 + 'px, -' + y * 15 + 'px)';
+        FirstLayer.style.transform = 'translate(+' + x * 0 + 'px, +' + y * 0 + 'px)';
+    });
+};
+
+
 const blurpanel = document.querySelector('.blur')
 let clickSound = new Audio("click1.mp3")
 let navigation = document.querySelector('.navigation')
 let hoverSound = new Audio("hover.mp3")
+let overlay = document.querySelector('.overlay_button')
+let nightPanel = document.querySelector('.overlay')
+let nightSound = new Audio("nightSound.mp3")
 function blur()
 {
     document.querySelector('.main').classList.toggle('blurred');
@@ -15,5 +31,14 @@ function navisound()
     console.log("hovered")
     hoverSound.volume =0.2
 }
+function Night()
+{
+    navigation.classList.toggle("night_navigation")
+    nightPanel.classList.toggle('overlayed');
+    nightSound.play()
+    nightSound.volume =0.2
+}
 navigation.addEventListener("pointerenter", navisound);
 blurpanel.addEventListener('click',blur);
+overlay.addEventListener("click", Night)
+
