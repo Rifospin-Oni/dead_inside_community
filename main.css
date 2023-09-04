@@ -9,27 +9,29 @@
     text-decoration: none;
     user-select: none;
 }
+body::-webkit-scrollbar
+{
+    display: none;
+}
 .BG
 {
     position: fixed;
     z-index: -1;
+    transition: background 0.2s ease;
 }
 .overlay
 {
     transition: 1.5s;
 }
-.overlayed
+.brutalBG
 {
     position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1;
+    z-index: -2;
+    transition: background 0.2s ease;
 }
 body{
     /* background-image: url(BG2.png); */
     background-size: cover;
-    
 }
 .main
 {
@@ -39,17 +41,16 @@ body{
     color: blueviolet;
     margin-left: 5%;
     z-index: 0;
-    transition: 2s;
+    transition: 1s;
     display: flex;
-    justify-content: center;
+    align-content: center;
     border-left:  5px solid rgba(101, 0, 155, 0.3);
     border-right:  5px solid rgba(101, 0, 155, 0.3);
+    flex-direction: column;
 }
-.blurred
-{
-    backdrop-filter: blur(6px);
-    box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5)
-}
+
+
+
 .About_Us
 {
     width: 100%;
@@ -61,7 +62,7 @@ body{
     align-items: center;
     transition: 0.5s;
 }
-.About_Us h2
+.About_Us_title
 {
     font-family: 'Manrope', sans-serif;
     color: #251352;
@@ -69,7 +70,7 @@ body{
     margin-bottom: 30px;
     margin-top: 50px;
 }
-.About_Us span
+.About_Us_text
 {
     font-family: 'Pacifico', cursive;
     color: #0e0533;
@@ -86,4 +87,34 @@ body{
 }
 
 
-
+.discord
+{
+    width: 100%;
+    height: 800px;
+    background-color: rgba(145, 114, 248, 0.1);
+    border-right: solid rgba(27, 8, 58, 0.35) 2px ;
+    border-top: solid 2px rgba(101, 27, 255, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.1s;
+}
+.discord_h2
+{
+    font-family: 'Manrope', sans-serif;
+    color: #251352;
+    font-size: 80px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    transition: 1s;
+}
+.discord_span {
+    font-family: 'Pacifico', cursive;
+    color: #0e0533;
+    font-size: 45px;
+    text-align: center;
+}
+.widgetBody-38iyIo
+{
+    background-color: rgb(207 167 202 / 80%);
+}

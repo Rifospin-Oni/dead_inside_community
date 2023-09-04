@@ -18,6 +18,7 @@ let hoverSound = new Audio("hover.mp3")
 let overlay = document.querySelector('.overlay_button')
 let nightPanel = document.querySelector('.overlay')
 let nightSound = new Audio("nightSound.mp3")
+let dicsordSection = document.querySelector('.discord_h2')
 function blur()
 {
     document.querySelector('.main').classList.toggle('blurred');
@@ -41,4 +42,26 @@ function Night()
 navigation.addEventListener("pointerenter", navisound);
 blurpanel.addEventListener('click',blur);
 overlay.addEventListener("click", Night)
+
+function discordEnter()
+{
+    document.querySelector('.BG').classList.toggle('hidden');
+    document.querySelectorAll('.About_Us_text').forEach(element =>
+    {
+        element.classList.toggle('dark_font')
+    })
+    document.querySelector('.About_Us_title').classList.toggle('dark_font')
+    document.querySelector('.main').classList.toggle('dark_main')
+    document.querySelector('.discord_h2').classList.toggle('dark_font')
+    document.querySelector('.discord_span').classList.toggle('dark_font')
+    document.querySelectorAll('.navigation_button').forEach( element =>
+    {
+        element.classList.toggle('discord_navigation')
+    })
+}
+dicsordSection.addEventListener('click', discordEnter)
+
+
+
+
 
