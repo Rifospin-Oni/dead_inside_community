@@ -1,11 +1,17 @@
 .overlayed
 {
-    position: fixed;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
+    transition: 1s;
 }
+
+.overlayed
+{
+    position: fixed;
+}
+
 .blurred
 {
     backdrop-filter: blur(6px);
@@ -40,6 +46,22 @@
     font-size: 55px;
     color: rgb(175, 175, 175);
     margin-bottom: 10px;
+}
+.dark_navtitle
+{
+    color: rgb(51, 51, 51);
+    font-weight: normal;
+    -webkit-text-stroke: 0.75px rgba(255, 255, 255, 0.4);
+}
+.dark_navtitle::first-letter
+{
+  color: whitesmoke;
+}
+.navigation_discord_border
+{
+    border-right-width: 15px;
+    border-right-style: solid;
+    border-right-color: rgba(197, 197, 197, 0.8);
 }
 
 

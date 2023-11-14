@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400&family=DM+Sans:opsz@9..40&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 *
 {
     margin: 0;
@@ -22,6 +26,7 @@ body::-webkit-scrollbar
 .overlay
 {
     transition: 1.5s;
+    z-index: -1;
 }
 .brutalBG
 {
@@ -36,7 +41,6 @@ body{
 .main
 {
     width: 90%;
-    height: 3000px;
     background-color:rgba(229, 180, 255, 0.3);
     color: blueviolet;
     margin-left: 5%;
@@ -48,13 +52,9 @@ body{
     border-right:  5px solid rgba(101, 0, 155, 0.3);
     flex-direction: column;
 }
-
-
-
 .About_Us
 {
     width: 100%;
-    height: 20%;
     background-color: rgba(145, 114, 248, 0.1);
     border-right: solid rgba(27, 8, 58, 0.35) 2px ;
     display: flex;
@@ -64,7 +64,7 @@ body{
 }
 .About_Us_title
 {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Pixelify Sans', cursive;
     color: #251352;
     font-size: 80px;
     margin-bottom: 30px;
@@ -85,12 +85,9 @@ body{
 {
     color: #633bb7;
 }
-
-
 .discord
 {
     width: 100%;
-    height: 800px;
     background-color: rgba(145, 114, 248, 0.1);
     border-right: solid rgba(27, 8, 58, 0.35) 2px ;
     border-top: solid 2px rgba(101, 27, 255, 0.25);
@@ -101,7 +98,7 @@ body{
 }
 .discord_h2
 {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Pixelify Sans', cursive;
     color: #251352;
     font-size: 80px;
     margin-bottom: 30px;
@@ -117,4 +114,8 @@ body{
 .widgetBody-38iyIo
 {
     background-color: rgb(207 167 202 / 80%);
+}
+.discord_title
+{
+  font-family: 'Montserrat', sans-serif;
 }

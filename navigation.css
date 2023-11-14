@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     justify-content: center;
     z-index: 2;
-     margin-left: -20%;
+    margin-left: -20%;
     border-right-width: 15px;
     border-right-style: solid;
     border-right-color: rgba(120, 0, 255, 0.8);
@@ -23,26 +23,32 @@
 {
   width: 0px;
 }
-.navigation_title h1{
+.nav_title{
   margin-top: 20%;
   color: rgb(0, 0, 97);
-
+}
+.navigation_title
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
 }
 .navigation_button::before
 {
    content: "|  ";
    color: rgb(224, 197, 250);
 }
-.navigation_title h1::first-letter
+.nav_title::first-letter
 {
     color: rgb(53, 0, 102);
 }
 .navigation_button
 {
-    margin-top: 5px;
+    margin-top:10px;
     font-size: 50px;
     margin-bottom: 5px;
     transition: ease 0.3s;
+    font-family: 'Work Sans', sans-serif;
 }
 .navigation_button:hover
 {
@@ -54,18 +60,20 @@
 .navigation:hover
 {
     margin-left: 0px;
-
 }
 .blur
 {
-    width: 100px;
-    height: 50px;
+    width: 35%;
+    height: 6%;
     background-color: rgba(123, 58, 231, 0.05);
     backdrop-filter: blur(40px);
     overflow: visible;
     transition: 0.25s;
     color: rgba(27, 9, 70, 0.7);
     border-radius: 5px;
+    text-align: justify-all;
+    margin-bottom: 5%;
+    font-family: 'Raleway', sans-serif;
 }
 .blur::before
 {
@@ -85,8 +93,7 @@
 {
     font-size: 55px;
     color: rgb(84, 0, 163);
-    width: 120px;
-    height: 70px;
+    width: 40%;
 }
 .button_blurred
 {
@@ -100,14 +107,18 @@
 }
 .overlay_button
 {
-    width: 120px;
-    height: 50px;
+    width: 35%;
+    height: 6%;
     background-color: rgba(123, 58, 231, 0.05);
     backdrop-filter: blur(40px);
     overflow: visible;
     transition: 0.25s;
     color: rgba(27, 9, 70, 0.7);
     border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Raleway', sans-serif;
 }
 .overlay_button::before {
     content: "|   ";
@@ -115,8 +126,11 @@
 }
 .overlay_button:hover
 {
-    font-size: 55px;
+    font-size: 50px;
     color: rgb(84, 0, 163);
-    width: 150px;
-    height: 70px;
+    width: 40%;
+}
+.settings_title
+{
+    font-family: 'Raleway', sans-serif;
 }

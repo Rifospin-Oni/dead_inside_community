@@ -5,7 +5,7 @@ if(w > 1000){
     window.addEventListener('mousemove', function(e) {
         let x = e.clientX / window.innerWidth;
         let y = e.clientY / window.innerHeight;
-        bg.style.transform = 'translate(-' + x * 15 + 'px, -' + y * 15 + 'px)';
+        bg.style.transform = 'translate(-' + x * 5 + 'px, -' + y * 5 + 'px)';
         FirstLayer.style.transform = 'translate(+' + x * 0 + 'px, +' + y * 0 + 'px)';
     });
 };
@@ -18,7 +18,7 @@ let hoverSound = new Audio("hover.mp3")
 let overlay = document.querySelector('.overlay_button')
 let nightPanel = document.querySelector('.overlay')
 let nightSound = new Audio("nightSound.mp3")
-let dicsordSection = document.querySelector('.discord_h2')
+let dicsordSection = document.querySelector('.discord_title')
 function blur()
 {
     document.querySelector('.main').classList.toggle('blurred');
@@ -58,8 +58,10 @@ function discordEnter()
     {
         element.classList.toggle('discord_navigation')
     })
+    document.querySelector('.nav_title').classList.toggle("dark_navtitle")
+    document.querySelector('.navigation').classList.toggle("navigation_discord_border")
 }
-dicsordSection.addEventListener('click', discordEnter)
+//dicsordSection.addEventListener('click', discordEnter)
 
 
 
